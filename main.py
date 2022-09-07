@@ -1,2 +1,1 @@
-lis = {"eh":2, "do":3}
-
+print("he"g)
