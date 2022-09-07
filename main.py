@@ -1,4 +1,2 @@
-print("he")
-x = 3
-print("\n",x)
+lis = {"eh":2, "do":3}
 
