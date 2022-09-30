@@ -28,3 +28,20 @@ class Math:
 		return Math.mul(Math.floor(a), Math.floor(b))
 	def divFloor(a, b):
 		return Math.div(Math.floor(a), Math.floor(b))
+
+class Bitwise:
+	def lShift(value, unitShift):
+		try:
+			int(unitShift)
+			int(value)
+		except ValueError:
+			print('invalid value')
+			return
+		return value << unitShift
+	def rShift(value, unitShift):
+		try:
+			int(unitShift)
+			int(value)
+		except ValueError:
+			print('invalid value')
+			return
