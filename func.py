@@ -27,3 +27,20 @@ def reverse(array, start, stop):
     if start < stop - 1:
         array[start], array[stop - 1] = array[stop - 1], array[start]
         reverse(array, start + 1, stop - 1)
+def maximum(array, n):
+    if n < 0:
+        return 0
+    elif n == 0:
+        return array[0]
+    else:
+        result = max(array[n-1], maximum(array, n-1))
+
+    return result
+def minimum(array, n):
+    if n <0:
+        return 0
+    elif n == 0:
+        return array[0]
+    else:
+        result = min(array[n-1], minimum(array, n-1))
+    return result
